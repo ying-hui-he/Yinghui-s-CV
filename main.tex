@@ -78,7 +78,7 @@
 \vspace{0pt}
 \raggedleft
 % Replace 'photo.jpg' and adjust size as needed
-\includegraphics[width=0.8in,height=0.8in,keepaspectratio]{profile.JPG}
+\includegraphics[width=0.8in,height=0.8in,keepaspectratio]{profile2_large.jpg}
 \end{minipage}
 % --- End Header ---
 \vspace{-5mm}
@@ -124,9 +124,19 @@
 %   \item Introduced AdaptMI, an adaptive method to select skill-based in-context examples that boosts performance by 6\%.
 %   \item 
 % \end{itemize}
-\resumePublication
-{\href{https://arxiv.org/abs/2604.12002}{\textbf{Self-Distillation Zero: Self-Revision Turns Binary Rewards into Dense Supervision
-}}}{Princeton University}{\textbf{Yinghui He}, , Simran Kaur, Adithya Bhaskar, Yongjin Yang, Jiarui Liu, Narutatsu Ri, Liam Fowl, Abhishek Panigrahi, Danqi Chen, and Sanjeev Arora.}{ICML AI4Math Workshop (Honorable Mention); ICML RLxF Workshop (Oral)}
+\vspace{0.5mm}
+% Row 1: title (narrow, wraps) + workshops (right-aligned via nested tabular)
+\begin{tabular*}{0.98\textwidth}[t]{@{}p{0.52\textwidth} @{\extracolsep{\fill}} >{\raggedleft\arraybackslash}p{0.41\textwidth}@{}}
+    \href{https://arxiv.org/abs/2604.12002}{\textbf{Self-Distillation Zero: Self-Revision Turns Binary Rewards into Dense Supervision}} &
+    \begin{tabular}[t]{@{}r@{}}
+        \textbf{\footnotesize{ICML 2026 RLxF Workshop \textcolor{darkred}{\textbf{(Oral)}};}} \\
+        \textbf{\footnotesize{AI4Math Workshop \textcolor{darkred}{\textbf{(Honorable Mention)}}}}
+    \end{tabular} \\
+\end{tabular*}\\[0em]
+% Row 2: authors (wide) + university (right-aligned, single line)
+\begin{tabular*}{0.98\textwidth}[t]{@{}p{0.78\textwidth} @{\extracolsep{\fill}}r@{}}
+    \textbf{Yinghui He}, , Simran Kaur, Adithya Bhaskar, Yongjin Yang, Jiarui Liu, Narutatsu Ri, Liam Fowl, Abhishek Panigrahi, Danqi Chen, and Sanjeev Arora. & \textit{\footnotesize{Princeton University}}\\
+\end{tabular*}\\[-0.4em]
 \begin{itemize}[leftmargin=*, itemsep=0.2mm]
   \item Proposed SD-Zero, an on-policy self-distillation method that converts binary rewards into dense token supervision.
     \item Conducted experiments on Qwen3 and Olmo3 models across math and code benchmarks and brought $10\%$ gains.

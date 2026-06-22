@@ -2,6 +2,7 @@
 % Color definitions
 % \definecolor{darkblue}{rgb}{0, 0, 0.5}
 \definecolor{darkblue}{HTML}{1D63A6}
+\definecolor{darkred}{HTML}{A6231D}
 
 % Page layout
 \setlength{\multicolsep}{0pt} 
@@ -75,7 +76,7 @@
 
 \newcommand{\resumePublication}[4]{
 \vspace{0.5mm}
-    \begin{tabular*}{0.98\textwidth}[t]{p{0.78\textwidth} @{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.98\textwidth}[t]{@{}p{0.66\textwidth} @{\extracolsep{\fill}} >{\raggedleft\arraybackslash}p{0.30\textwidth}@{}}
         \textbf{#1} & \textbf{\footnotesize{#4}} \\
         #3 &  \textit{\footnotesize{#2}}\\
     \end{tabular*}\\[-0.4em]
