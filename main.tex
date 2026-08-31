@@ -126,6 +126,16 @@
 % \end{itemize}
 \vspace{0.5mm}
 % Row 1: title (narrow, wraps) + workshops (right-aligned via nested tabular)
+\resumePublication
+{\href{https://arxiv.org/abs/2608.05139}{\textbf{Toward Skill-Native LLMs: Skill Entropy for Benchmarking and Training Long-Horizon Reasoning}}}{Princeton University}{\textbf{Yinghui He*}, Ling Yang*, Jiarui Liu, Yongjin Yang, Lechen Zhang, Yingcheng Wu, Zhenfei Yin, Mengdi Wang, and Sanjeev Arora.}{Preprint (2026)}
+
+\begin{itemize}[leftmargin=*, itemsep=0.2mm]
+  \item Proposed Skill Entropy, a metric that quantifies the difficulty of transitions between reasoning skills in multi-step tasks.
+  \item Released Skill\textsuperscript{2}-Bench (558 skills across 9 domains); developed Skill-Entropy RL that boosts smaller LMs on long-horizon reasoning.
+\end{itemize}
+
+
+
 \begin{tabular*}{0.98\textwidth}[t]{@{}p{0.52\textwidth} @{\extracolsep{\fill}} >{\raggedleft\arraybackslash}p{0.41\textwidth}@{}}
     \href{https://arxiv.org/abs/2604.12002}{\textbf{Self-Distillation Zero: Self-Revision Turns Binary Rewards into Dense Supervision}} &
     \begin{tabular}[t]{@{}r@{}}
@@ -169,6 +179,17 @@
   \item Independently implemented an automated data generator; coordinated human annotation on 600+ samples.
 \end{itemize}
 
+
+\resumePublication
+{\href{https://arxiv.org/abs/2501.05414}{\textbf{LongProc: Benchmarking Long-Context Language Models on Long Procedural Generation}}}{Princeton University}{Xi Ye, Fangcong Yin*, \textbf{Yinghui He}*, Joie Zhang*, Howard Yen*, Tianyu Gao, Greg Durrett, and Danqi Chen.}{COLM 2025}
+
+\begin{itemize}[leftmargin=*, itemsep=0.2mm]
+    \item Introduced LongProc, a benchmark that tests both long-form generation and highly dispersed information.
+
+  % \item Built a theory-of-mind tracking task within LongProc for evaluating LCLMs on long-form procedural generation.
+  \item Independently designed and generated 2k examples for the \textit{Theory-of-Mind Tracking} subset, and evaluated 17 LLMs.
+\end{itemize}
+
 \resumePublication
 {\href{https://arxiv.org/abs/2504.09689}{\textbf{EmoAgent: Assessing and Safeguarding Human-AI Interaction for Mental Health Safety}}}{Princeton University}{Jiahao Qiu*, \textbf{Yinghui He}*, Xinzhe Juan, Yimin Wang, Yuhan Liu, Zixin Yao, Yue Wu, Xun Jiang, Ling Yang, and Mengdi Wang.}{EMNLP 2025 \textcolor{darkred}{\textbf{(Oral)}}}
 
@@ -177,6 +198,8 @@
   % \item Found 57.6\% of interactions led to mental state deterioration; proposed EmoGuard reduced risks by over 50\%.
   \item Co-led experimental design and result analysis; coordinated the EmoAgent team.
 \end{itemize}
+
+
 
 % \resumePublication
 % {\href{https://arxiv.org/abs/2504.09689}{\textbf{Making Complex Reasoning Student-Friendly: A Hybrid Distillation Framework}}}{Princeton University}{Yongjin Yang, \textbf{Yinghui He}, Jiarui Liu, and Zhijing Jin.}{Under Submission (2026)}
@@ -201,15 +224,6 @@
 \item Estimated transferability through projected gradient alignment with less than 1\% training overhead, improving macro-average accuracy across six reasoning domains by up to 2.8 points.
 \end{itemize}
 
-\resumePublication
-{\href{https://arxiv.org/abs/2501.05414}{\textbf{LongProc: Benchmarking Long-Context Language Models on Long Procedural Generation}}}{Princeton University}{Xi Ye, Fangcong Yin*, \textbf{Yinghui He}*, Joie Zhang*, Howard Yen*, Tianyu Gao, Greg Durrett, and Danqi Chen.}{COLM 2025}
-
-\begin{itemize}[leftmargin=*, itemsep=0.2mm]
-    \item Introduced LongProc, a benchmark that tests both long-form generation and highly dispersed information.
-
-  % \item Built a theory-of-mind tracking task within LongProc for evaluating LCLMs on long-form procedural generation.
-  \item Independently designed and generated 2k examples for the \textit{Theory-of-Mind Tracking} subset, and evaluated 17 LLMs.
-\end{itemize}
 }
 \vspace{-6mm}
 
